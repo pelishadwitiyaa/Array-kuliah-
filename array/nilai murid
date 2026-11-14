@@ -1,0 +1,20 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int nilai[5] = {80, 75, 90, 65, 85};
+    int jumlah = 0;
+    
+    cout << "Nilai murid: " << endl;
+    for (int i = 0; i < 5; i++) {
+        cout << nilai[i] << endl;
+        jumlah += nilai[i];
+    }
+    
+    float rata_rata = static_cast<float>(jumlah) / 5;
+    cout << endl;
+    cout << "Jumlah nilai = " << jumlah << endl;
+    cout << "Rata-rata = " << rata_rata << endl;
+
+    return 0;
+}
